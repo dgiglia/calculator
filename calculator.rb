@@ -4,8 +4,8 @@ end
 
 def check_for_numbers(user_number)
   while user_number.to_f == 0.0
-  say("Oops! I didn't understand that. Try again with a non-zero number!")
-  user_number = gets.chomp
+    say("Oops! I didn't understand that. Try again with a non-zero number!")
+    user_number = gets.chomp
   end
   user_number
 end
@@ -15,8 +15,8 @@ say("Please select 'A' for add, 'S' for subtract, 'M' for multiply, or 'D' for d
 operator = gets.chomp.downcase
 
 until ['a', 's', 'm', 'd'].include?(operator)
-say("You'll need a Calcutron5000 for that! I'm only a simple calculator. Please enter a different option.")
-operator = gets.chomp.downcase
+  say("You'll need a Calcutron5000 for that! I'm only a simple calculator. Please enter a different option.")
+  operator = gets.chomp.downcase
 end
 
 operation = case operator
